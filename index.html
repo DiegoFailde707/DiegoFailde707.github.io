@@ -118,9 +118,8 @@
       </aside>
     </section>
 
-    <section id="sobre-mi" class="section observe-section" aria-labelledby="sobre-mi-titulo">
+    <section id="sobre-mi" class="section section-band observe-section" aria-labelledby="sobre-mi-titulo">
       <div class="section-heading">
-        <p class="eyebrow">Perfil</p>
         <h2 id="sobre-mi-titulo">Sobre mí</h2>
       </div>
 
@@ -153,9 +152,8 @@
       </div>
     </section>
 
-    <section id="proyectos" class="section observe-section" aria-labelledby="proyectos-titulo">
+    <section id="proyectos" class="section section-band section-band-muted observe-section" aria-labelledby="proyectos-titulo">
       <div class="section-heading">
-        <p class="eyebrow">Portfolio</p>
         <h2 id="proyectos-titulo">Proyectos destacados</h2>
         <p>
           Selección de proyectos y líneas de trabajo vinculadas a automatización, datos y mejora de procesos.
@@ -174,7 +172,7 @@
             Automatización para procesar grandes volúmenes de documentos, extraer campos estructurados,
             normalizar resultados y generar salidas revisables en Excel.
           </p>
-          <span class="card-status">Caso documentado en preparación</span>
+          <a href="proyectos/preparacion-expedientes-pdf.html" class="card-link">Ver proyecto</a>
         </article>
 
         <article class="project-card">
@@ -187,7 +185,7 @@
             Scripts para reducir tareas manuales repetitivas en aplicaciones web, simulando navegación,
             búsqueda de registros y extracción de tablas.
           </p>
-          <span class="card-status">Resumen técnico en preparación</span>
+          <a href="proyectos/automatizacion-consultas-web.html" class="card-link">Ver página del proyecto</a>
         </article>
 
         <article class="project-card">
@@ -200,7 +198,7 @@
             Creación de diccionarios de variantes para transformar texto heterogéneo en datos normalizados,
             mejorando la detección de términos que un algoritmo simple no identificaría de forma fiable.
           </p>
-          <span class="card-status">Metodología en preparación</span>
+          <a href="proyectos/normalizacion-informacion-textual.html" class="card-link">Ver página del proyecto</a>
         </article>
 
         <article class="project-card">
@@ -213,7 +211,7 @@
             Exploración de asistentes especializados para revisión de textos, organización de carpetas,
             clasificación de documentos y apoyo a flujos administrativos.
           </p>
-          <span class="card-status">Avance en preparación</span>
+          <a href="proyectos/agentes-apoyo-documental.html" class="card-link">Ver página del proyecto</a>
         </article>
 
         <article class="project-card">
@@ -226,48 +224,99 @@
             Organización de datos en tablas, consultas, controles y salidas para facilitar seguimiento,
             revisión y análisis de información administrativa.
           </p>
-          <span class="card-status">Ejemplo en preparación</span>
+          <a href="proyectos/modelos-datos-reporting.html" class="card-link">Ver página del proyecto</a>
         </article>
       </div>
     </section>
 
-    <section id="tecnologias" class="section observe-section" aria-labelledby="tecnologias-titulo">
+    <section id="tecnologias" class="section section-band observe-section" aria-labelledby="tecnologias-titulo">
       <div class="section-heading">
-        <p class="eyebrow">Herramientas</p>
         <h2 id="tecnologias-titulo">Tecnologías e intereses</h2>
+        <p>
+          Áreas de trabajo y aprendizaje que iré documentando con notas, ejemplos y proyectos concretos.
+        </p>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Automatización</h3>
-          <p>Python, Selenium, scripts de escritorio, procesos repetitivos y tratamiento masivo de archivos.</p>
-        </div>
+      <div class="work-blocks">
+        <article class="work-block">
+          <div class="work-block-heading">
+            <h3>Datos</h3>
+            <p>Del dato bruto a una salida revisable: preparación, estructura, prueba y mejora.</p>
+          </div>
+          <div class="skills-grid compact-grid">
+            <a class="skill-card" href="temas/limpieza-normalizacion.html">
+              <h4>Extracción</h4>
+              <p>Obtención de información desde documentos, tablas o archivos de trabajo.</p>
+            </a>
+            <a class="skill-card" href="temas/limpieza-normalizacion.html">
+              <h4>Limpieza y normalización</h4>
+              <p>Corrección, ordenación y homogeneización de información heterogénea.</p>
+            </a>
+            <a class="skill-card" href="temas/modelizacion.html">
+              <h4>Modelización</h4>
+              <p>Estructura de tablas, relaciones y criterios para trabajar con los datos.</p>
+            </a>
+            <a class="skill-card" href="temas/analisis-datos.html">
+              <h4>Entrenamiento de IA</h4>
+              <p>Preparación de ejemplos y criterios para pruebas controladas con modelos.</p>
+            </a>
+            <a class="skill-card" href="temas/analisis-datos.html">
+              <h4>Revisión y mejora del modelo</h4>
+              <p>Comprobación de resultados, errores y ajustes antes de reutilizar el flujo.</p>
+            </a>
+            <a class="skill-card" href="temas/modelizacion.html">
+              <h4>Despliegue del modelo</h4>
+              <p>Preparación de una salida práctica, documentada y mantenible.</p>
+            </a>
+          </div>
+        </article>
 
-        <div class="skill-card">
-          <h3>Datos</h3>
-          <p>Excel avanzado, Power Query, Power BI, SQL, limpieza, normalización y análisis.</p>
-        </div>
+        <article class="work-block">
+          <div class="work-block-heading">
+            <h3>Procesos</h3>
+            <p>Revisión de tareas administrativas para detectar puntos de mejora antes de automatizar.</p>
+          </div>
+          <div class="skills-grid compact-grid three-grid">
+            <a class="skill-card" href="temas/mejora-procesos.html">
+              <h4>Análisis de procesos</h4>
+              <p>Identificación de pasos, dependencias, repeticiones y criterios de revisión.</p>
+            </a>
+            <a class="skill-card" href="temas/mejora-procesos.html">
+              <h4>Detección de errores</h4>
+              <p>Localización de fallos frecuentes, tareas ambiguas y puntos de control.</p>
+            </a>
+            <a class="skill-card" href="temas/mejora-procesos.html">
+              <h4>Mejora continua</h4>
+              <p>Ajustes graduales para hacer el trabajo más claro, trazable y repetible.</p>
+            </a>
+          </div>
+        </article>
 
-        <div class="skill-card">
-          <h3>IA aplicada</h3>
-          <p>Agentes especializados para apoyo documental, clasificación, revisión de textos y organización de información.</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Documentación</h3>
-          <p>Apuntes, guías, artículos técnicos, explicación de procesos y aprendizaje estructurado.</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Web y portfolio</h3>
-          <p>HTML, CSS, GitHub Pages y publicación de proyectos de forma clara y profesional.</p>
-        </div>
+        <article class="work-block">
+          <div class="work-block-heading">
+            <h3>Automatización, IA y agentes</h3>
+            <p>Herramientas de apoyo para reducir tareas repetitivas y revisar información con más criterio.</p>
+          </div>
+          <div class="skills-grid compact-grid three-grid">
+            <a class="skill-card" href="temas/automatizacion.html">
+              <h4>Automatización</h4>
+              <p>Scripts y flujos de trabajo para preparar, transformar o revisar archivos.</p>
+            </a>
+            <a class="skill-card" href="temas/automatizacion.html">
+              <h4>IA aplicada</h4>
+              <p>Uso prudente de modelos como apoyo documental y de análisis.</p>
+            </a>
+            <a class="skill-card" href="temas/automatizacion.html">
+              <h4>Agentes de apoyo</h4>
+              <p>Asistentes especializados para ordenar tareas, documentos y revisiones.</p>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="aprendizaje" class="section" aria-labelledby="aprendizaje-titulo">
+    <section id="aprendizaje" class="section section-band section-band-muted" aria-labelledby="aprendizaje-titulo">
       <div class="section-heading">
-        <p class="eyebrow">Ruta</p>
         <h2 id="aprendizaje-titulo">Aprendizaje en curso</h2>
       </div>
 
@@ -314,13 +363,13 @@
       </div>
     </section>
 
-    <section id="articulos" class="section observe-section" aria-labelledby="articulos-titulo">
+    <section id="articulos" class="section section-band observe-section" aria-labelledby="articulos-titulo">
       <div class="section-heading">
-        <p class="eyebrow">Blog</p>
         <h2 id="articulos-titulo">Artículos y notas</h2>
         <p>
           Estoy preparando notas breves sobre automatización, datos y aprendizaje técnico aplicado a problemas reales.
         </p>
+        <a class="btn btn-secondary" href="articulos/">Ver índice de artículos</a>
       </div>
 
       <div class="article-list">
@@ -346,9 +395,8 @@
       </div>
     </section>
 
-    <section id="cv" class="section" aria-labelledby="cv-titulo">
+    <section id="cv" class="section section-band section-band-muted" aria-labelledby="cv-titulo">
       <div class="section-heading">
-        <p class="eyebrow">CV y formación</p>
         <h2 id="cv-titulo">Perfil profesional</h2>
       </div>
 
@@ -366,7 +414,6 @@
 
     <section id="contacto" class="section contact-section observe-section" aria-labelledby="contacto-titulo">
       <div>
-        <p class="eyebrow">Contacto</p>
         <h2 id="contacto-titulo">Hablemos</h2>
         <p>
           Puedes seguir mis avances y proyectos en GitHub. Iré incorporando artículos, documentación

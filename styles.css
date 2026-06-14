@@ -55,7 +55,9 @@ a {
 }
 
 a:focus-visible,
-.btn:focus-visible {
+.btn:focus-visible,
+.skill-card:focus-visible,
+.project-card:focus-within {
   outline: 3px solid rgba(56, 189, 248, 0.72);
   outline-offset: 4px;
 }
@@ -308,8 +310,30 @@ a:focus-visible,
   scroll-margin-top: 82px;
 }
 
+.section-band {
+  max-width: none;
+  margin: 0;
+  padding: 58px 24px;
+  border-top: 1px solid rgba(226, 232, 240, 0.72);
+}
+
+.section-band-muted {
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.section-band > * {
+  max-width: 1112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-inner {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
 .section-heading {
-  max-width: 760px;
+  max-width: 1112px;
   margin-bottom: 24px;
 }
 
@@ -322,6 +346,7 @@ a:focus-visible,
 }
 
 .section-heading p {
+  max-width: 760px;
   color: var(--muted);
 }
 
@@ -379,7 +404,8 @@ a:focus-visible,
 }
 
 .project-card:hover,
-.project-card.featured:hover {
+.project-card.featured:hover,
+.skill-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
   border-color: rgba(37, 99, 235, 0.22);
@@ -397,6 +423,7 @@ a:focus-visible,
 
 .project-card h3,
 .skill-card h3,
+.skill-card h4,
 .article-list h3,
 .cv-box h3 {
   margin: 0 0 10px;
@@ -441,6 +468,141 @@ a:focus-visible,
 
 .skill-card {
   padding: 24px;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.skill-card h4 {
+  font-size: 1rem;
+}
+
+.skill-card:hover {
+  text-decoration: none;
+}
+
+.work-blocks {
+  display: grid;
+  gap: 30px;
+}
+
+.work-block {
+  padding: 0;
+}
+
+.work-block-heading {
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+
+.work-block-heading h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+
+.work-block-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.compact-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.three-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.inline-link {
+  color: var(--primary);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  text-decoration: underline;
+}
+
+.page-hero {
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 72px 24px 52px;
+}
+
+.page-hero h1,
+.article-page h1 {
+  max-width: 860px;
+  margin: 0;
+  color: #0f172a;
+  font-size: 3.4rem;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.page-hero p,
+.lead {
+  max-width: 760px;
+  color: #475569;
+  font-size: 1.1rem;
+}
+
+.article-page,
+.project-page {
+  max-width: none;
+}
+
+.article-page {
+  margin: 0 auto;
+  padding: 72px 24px 52px;
+}
+
+.article-content,
+.article-page {
+  max-width: 860px;
+}
+
+.article-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-content h2,
+.article-page h2 {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #0f172a;
+  font-size: 1.55rem;
+}
+
+.article-content p,
+.article-content li,
+.article-page p,
+.article-page li {
+  color: #475569;
+}
+
+.article-meta {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.pdf-section {
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.pdf-actions {
+  margin-bottom: 18px;
+}
+
+.pdf-embed {
+  width: 100%;
+  min-height: 680px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
 }
 
 .timeline {
@@ -551,6 +713,16 @@ a:focus-visible,
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .compact-grid,
+  .three-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-hero h1,
+  .article-page h1 {
+    font-size: 2.8rem;
+  }
 }
 
 @media (max-width: 980px) {
@@ -612,9 +784,32 @@ a:focus-visible,
     grid-template-columns: 1fr;
   }
 
+  .compact-grid,
+  .three-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section {
     padding: 28px 18px;
     scroll-margin-top: 128px;
+  }
+
+  .section-band {
+    padding: 42px 18px;
+  }
+
+  .page-hero {
+    padding: 48px 18px 38px;
+  }
+
+  .page-hero h1,
+  .article-page h1 {
+    font-size: 2.25rem;
+    line-height: 1.08;
+  }
+
+  .pdf-embed {
+    min-height: 520px;
   }
 
   .cv-box {
