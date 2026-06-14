@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diego Failde | Automatización, datos y administración pública</title>
   <meta name="description" content="Portfolio personal de Diego Failde: automatización, análisis de datos, Python, Excel, SQL, IA aplicada y mejora de procesos en la administración pública." />
+  <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#172033" />
   <meta property="og:title" content="Diego Failde | Automatización, datos y administración pública" />
   <meta property="og:description" content="Portfolio personal sobre automatización, análisis de datos, Python, Excel, SQL, IA aplicada y mejora de procesos." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://diegofailde.es/" />
-  <link rel="canonical" href="https://diegofailde.es/" />
+  <meta property="og:url" content="https://www.diegofailde.es/" />
+  <meta property="og:site_name" content="Diego Failde" />
+  <meta property="og:locale" content="es_ES" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Diego Failde | Automatización, datos y administración pública" />
+  <meta name="twitter:description" content="Portfolio personal sobre automatización, análisis de datos, Python, Excel, SQL, IA aplicada y mejora de procesos." />
+  <link rel="canonical" href="https://www.diegofailde.es/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -22,6 +29,7 @@
       <a class="brand" href="#inicio">Diego Failde</a>
 
       <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#tecnologias">Tecnologías</a></li>
@@ -32,11 +40,11 @@
   </header>
 
   <main id="contenido">
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero" aria-labelledby="titulo-principal">
       <div class="hero-content">
         <p class="eyebrow">Automatización · Datos · Administración pública</p>
 
-        <h1>
+        <h1 id="titulo-principal">
           Automatizo procesos administrativos con Python, datos e IA aplicada.
         </h1>
 
@@ -62,12 +70,12 @@
         </div>
       </div>
 
-      <aside class="hero-card">
+      <aside class="hero-card" aria-labelledby="lineas-trabajo">
         <div class="avatar">DF</div>
 
         <p class="card-label">Portfolio en construcción</p>
 
-        <h2>Líneas de trabajo</h2>
+        <h2 id="lineas-trabajo">Líneas de trabajo</h2>
 
         <p class="hero-card-text">
           Estoy documentando proyectos y aprendizajes relacionados con datos,
@@ -110,10 +118,10 @@
       </aside>
     </section>
 
-    <section id="sobre-mi" class="section observe-section">
+    <section id="sobre-mi" class="section observe-section" aria-labelledby="sobre-mi-titulo">
       <div class="section-heading">
         <p class="eyebrow">Perfil</p>
-        <h2>Sobre mí</h2>
+        <h2 id="sobre-mi-titulo">Sobre mí</h2>
       </div>
 
       <div class="two-columns">
@@ -145,10 +153,10 @@
       </div>
     </section>
 
-    <section id="proyectos" class="section observe-section">
+    <section id="proyectos" class="section observe-section" aria-labelledby="proyectos-titulo">
       <div class="section-heading">
         <p class="eyebrow">Portfolio</p>
-        <h2>Proyectos destacados</h2>
+        <h2 id="proyectos-titulo">Proyectos destacados</h2>
         <p>
           Selección de proyectos y líneas de trabajo vinculadas a automatización, datos y mejora de procesos.
         </p>
@@ -223,10 +231,10 @@
       </div>
     </section>
 
-    <section id="tecnologias" class="section observe-section">
+    <section id="tecnologias" class="section observe-section" aria-labelledby="tecnologias-titulo">
       <div class="section-heading">
         <p class="eyebrow">Herramientas</p>
-        <h2>Tecnologías e intereses</h2>
+        <h2 id="tecnologias-titulo">Tecnologías e intereses</h2>
       </div>
 
       <div class="skills-grid">
@@ -257,10 +265,10 @@
       </div>
     </section>
 
-    <section id="aprendizaje" class="section">
+    <section id="aprendizaje" class="section" aria-labelledby="aprendizaje-titulo">
       <div class="section-heading">
         <p class="eyebrow">Ruta</p>
-        <h2>Aprendizaje en curso</h2>
+        <h2 id="aprendizaje-titulo">Aprendizaje en curso</h2>
       </div>
 
       <div class="timeline">
@@ -306,10 +314,10 @@
       </div>
     </section>
 
-    <section id="articulos" class="section observe-section">
+    <section id="articulos" class="section observe-section" aria-labelledby="articulos-titulo">
       <div class="section-heading">
         <p class="eyebrow">Blog</p>
-        <h2>Artículos y notas</h2>
+        <h2 id="articulos-titulo">Artículos y notas</h2>
         <p>
           Estoy preparando notas breves sobre automatización, datos y aprendizaje técnico aplicado a problemas reales.
         </p>
@@ -338,10 +346,10 @@
       </div>
     </section>
 
-    <section id="cv" class="section">
+    <section id="cv" class="section" aria-labelledby="cv-titulo">
       <div class="section-heading">
         <p class="eyebrow">CV y formación</p>
-        <h2>Perfil profesional</h2>
+        <h2 id="cv-titulo">Perfil profesional</h2>
       </div>
 
       <div class="cv-box">
@@ -356,10 +364,10 @@
       </div>
     </section>
 
-    <section id="contacto" class="section contact-section observe-section">
+    <section id="contacto" class="section contact-section observe-section" aria-labelledby="contacto-titulo">
       <div>
         <p class="eyebrow">Contacto</p>
-        <h2>Hablemos</h2>
+        <h2 id="contacto-titulo">Hablemos</h2>
         <p>
           Puedes seguir mis avances y proyectos en GitHub. Iré incorporando artículos, documentación
           técnica y una versión pública del CV cuando estén listos.
