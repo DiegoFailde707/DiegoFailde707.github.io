@@ -1,0 +1,7 @@
+# Copias de seguridad locales
+*_backup_*.html
+*_backup_*.css
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
